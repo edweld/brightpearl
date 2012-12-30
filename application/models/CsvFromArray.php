@@ -92,7 +92,7 @@ class Model_CsvFromArray {
                     case "string":
                         $out.=$this->_encapsulator. $data . $this->_encapsulator;
                     break;
-                    case "float":
+                    case "double":
                          $out.=$data;
                     break;
                     default:
