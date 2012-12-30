@@ -21,11 +21,11 @@ To execute the application, navigate to the directory you have
 downloaded the code and run the following to output paydates for 
 the current day
 
-``php -f index``
+``cd [/path/to/application]; php -f index``
 
 to generate alternate dates, use the optional parameters
 
-`` php -f index --month [1-12] --year [YYYY]``
+``cd [/path/to/application];  php -f index --month [1-12] --year [YYYY]``
 
 
 
