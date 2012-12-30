@@ -1,0 +1,17 @@
+Brightpearl CLI Date test
+*************************
+<?if($this->generated ===true):?>
+    Generated file : <?=$this->file?>
+    <?=PHP_EOL?>From the month <?=$this->month?> of year <?=$this->year?>
+    <?if(count($this->errors)>0):?>
+        <?=PHP_EOL?>but with the following errors
+        <?foreach($this->errors as $index=>$error):?>
+            <?=PHP_EOL?>error encountered for <?=$index?> : <?=array_walk($error, function(&$value, $key){ echo PHP_EOL."\t\t\t".$key." ".$value;})?>
+        <?endforeach?>
+    <?endif?>
+<?endif?>
+<?=PHP_EOL?>Commands:
+    -y [year in the format "YYYY"]
+    -m [integer ranging 1/12]
+
+    
