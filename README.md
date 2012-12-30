@@ -1,4 +1,4 @@
-brightpearl
+Brightpearl
 ===========
 
 Payment Dates CLI Application
