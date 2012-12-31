@@ -68,6 +68,7 @@ class Model_DateCalc {
         {
             $return[date("M", mktime(0, 0, 1, $m, 1, $this->_year))] 
                 = array(
+                    'month'=>date("F Y", mktime(0, 0, 1, $m, 1, $this->_year)),
                     'bonus'=> date("Y-m-d",$this->_getBonusDay($m)),
                     'pay'=>date("Y-m-d",$this->_getPayDay($m))
                 );

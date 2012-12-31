@@ -45,7 +45,9 @@ class IndexController extends Zend_Controller_Action {
             }
         
         }
-        $data = $calc->generatePayData();
+        $headers = array(array("Month","Bonus Day", "Pay Day"));
+        $dates = $calc->generatePayData();
+        $data = array_merge($headers, $dates);
         if(!is_array($data))
         {
             $errors['generating']='could not generate data from parameters';
