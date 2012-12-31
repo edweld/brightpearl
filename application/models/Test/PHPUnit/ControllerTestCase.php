@@ -22,7 +22,13 @@ class Model_Test_PHPUnit_ControllerTestCase  extends Zend_Test_PHPUnit_Controlle
             $front->setParam('bootstrap', $this->_application->getBootstrap());
         }
     }
-    
+    /*
+     * Implements the php reflection API returning an executable method
+     * @param object $obj an instantiated object
+     * @param string $name a method name belonging to the object
+     * @return object $method ReflectionMethod object
+     * @see http://php.net/manual/en/class.reflectionmethod.php
+     */
     public function reflectionAdapter($obj, $name)
     {
         if(version_compare(phpversion(), "5.3.4")<0 )

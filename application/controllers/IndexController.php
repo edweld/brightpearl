@@ -1,8 +1,8 @@
 <?php
 
-/**
- * 
- *
+/** 
+ * This is the main controller implemented in this application, 
+ * as it currently only serves one processing function
  * @author ed
  */
 class IndexController extends Zend_Controller_Action {
@@ -13,7 +13,6 @@ class IndexController extends Zend_Controller_Action {
     }
     
     public function indexAction(){
-        try{
         $generated = false;
         $errors = array();
         $year = $this->getRequest()->getParam("y",false);
@@ -64,6 +63,5 @@ class IndexController extends Zend_Controller_Action {
         $this->view->errors = $errors;
         $this->view->year = $calc->getYear();
         $this->view->month = date("F", mktime(0,0,1,$calc->getMonth(),1,$calc->getYear()))." (".$calc->getMonth().")";
-        }catch(Exception $e){ var_dump($e->getMessage());}
     }
 }

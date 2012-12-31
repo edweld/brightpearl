@@ -51,7 +51,11 @@ class Model_Router extends Zend_Controller_Router_Abstract
         return $dispatcher;
         
     }
-
+/*
+ * the assemble method must be defined as this class 
+ * must implement Zend_Controller_Router_Interface
+ * but it is not used in this implementation
+ */
     public function assemble ($userParams, $name = null, $reset = false, $encode = true)
     {
         echo "Not implemented\n", exit;
