@@ -17,10 +17,9 @@
             </exclude>
         </whitelist>
     </filter>
-<!-- 
+ 
     <logging>
-        <log highlowerbound="80" lowupperbound="50" highlight="true" yui="true" charset="UTF-8" target="./log/report" type="coverage-html">
-        <log target="./log/testdox.html" type="testdox-html">
-    </log></log></logging>
- -->
+        <log highlowerbound="100" lowupperbound="50" highlight="true" yui="true" charset="UTF-8" target="./log/report" type="coverage-html"></log>
+        <log target="./log/testdox.html" type="testdox-html"></log>
+    </logging>
 </phpunit>
