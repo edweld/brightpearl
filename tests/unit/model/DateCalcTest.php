@@ -167,19 +167,24 @@ class Model_DateCalcTest extends Model_Test_PHPUnit_ControllerTestCase
         $calc->setMonthStart(9);
         $res = $calc->generatePayData();
         $result = array(
+            
             'Sep'=> array(
+                'month'=>"September 2012",
                 'bonus'=>'2012-09-19',
                 'pay'=>'2012-09-28'
             ),
             'Oct'=> array(
+                'month'=>"October 2012",
                 'bonus'=>'2012-10-15',
                 'pay'=>'2012-10-31'
             ),
             'Nov'=> array(
+                'month'=>"November 2012",
                 'bonus'=>'2012-11-15',
                 'pay'=>'2012-11-30'
             ),
             'Dec'=> array(
+                'month'=>"December 2012",
                 'bonus'=>'2012-12-19',
                 'pay'=>'2012-12-31'
             )
