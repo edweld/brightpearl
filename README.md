@@ -6,9 +6,11 @@ Payment Dates CLI Application
 Installation
 --------------
 
-This application has been coded using Zend Framework
+This application has been coded using Zend Framework 1.12.1
 I've included the version with this repository, to keep things 
-simple so simply download or clone the code and execute
+simple so just download or clone the code and execute
+
+Ensure that the directory ./output has write permissions
 
 It's probably worthwhile running the unit tests, I've used PHPUnit
 
