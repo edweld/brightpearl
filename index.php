@@ -4,7 +4,7 @@ define('APPLICATION_ENV', (getenv('APPLICATION_ENV') ? getenv('APPLICATION_ENV')
 
 // Ensure library/php is on include_path
 set_include_path(implode(PATH_SEPARATOR, array(
-    realpath(APPLICATION_PATH . '/../library/'),
+    realpath(APPLICATION_PATH . '/../library/ZendFramework-1.12.1-minimal/'),
     get_include_path(),
 )));
 

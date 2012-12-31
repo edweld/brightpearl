@@ -7,7 +7,7 @@ define('APPLICATION_CONFIG', APPLICATION_PATH . '/configs/application.ini');
 define('APPLICATION_LANGUAGE', 'en');
 
 set_include_path(implode(PATH_SEPARATOR, array(
-    realpath(APPLICATION_PATH . '/../library/'),
+    realpath(APPLICATION_PATH . '/../library/ZendFramework-1.12.1-minimal/'),
     realpath(APPLICATION_PATH . '/tests/unit'),
     realpath(APPLICATION_PATH),
     get_include_path()
